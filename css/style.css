@@ -1,0 +1,409 @@
+/* Reset CSS */
+
+
+/*
+    1.Từ ngoài vào trong
+    2.Từ trên xuống dưới
+    3.Tổng quan đến chi tiết
+*/
+
+
+/*  1.Vị trí
+    2.Kích thước (width, height)
+    3.Màu sắc
+    4.Kiểu dáng (kiểu chữ, hình tròn, vuông...)
+    */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text-while {
+    color: #fff !important;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.clear {
+    clear: both;
+}
+
+#main {}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li a {
+    color: #000;
+    min-width: 160px;
+    height: 38px;
+    padding: 0 16px;
+}
+
+#nav .subnav li:hover a,
+#nav>li:hover>a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav>li>a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav .subnav li {
+    display: block;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .search-btn {
+    float: right;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 24px;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#header .search-btn:hover {
+    background-color: #f00;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    /*50% chiều ngang của chính nó*/
+    background: url('/assets//img//skytour.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content {
+    padding: 64px 64px;
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: justify;
+    /*Căn đều*/
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    /*Chữ nghiêng*/
+    opacity: 0.8;
+}
+
+#content .about-text {
+    margin-top: 25px;
+    line-height: 1.6;
+    /*Chỉnh độ cao của dòng*/
+}
+
+#content .member-list {
+    margin-top: 48px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 120px;
+}
+
+#content .member-item {
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    height: 154px;
+    border-radius: 4px;
+}
+
+
+/*Tour Section*/
+
+.tour-section {
+    background: #000;
+}
+
+.sticket-list {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.sticket-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.sticket-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.sticket-list .quantity {
+    background-color: #000;
+    color: #fff;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    float: right;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+.tour-section {
+    padding-bottom: 110px;
+}
+
+.place-list {
+    margin: 32px -8px 0;
+}
+
+.place-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+
+.place-img {
+    width: 100%;
+    height: 192px;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.place-time {
+    color: #757575;
+    margin-top: 15px;
+}
+
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.place-buy-btn {
+    background-color: #000;
+    border-radius: ;
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.place-buy-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-infor {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-infor i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-half .form-control {
+    padding: 12px 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 12px;
+    border: 1px solid #ccc;
+    width: 102%;
+}
+
+.contact-submit {
+    float: right;
+    display: block;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.contact-submit:hover {
+    background-color: #ccc;
+    color: #000;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+
+/*Map section*/
+
+.map-section img {
+    width: 100%;
+    padding: 0;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
